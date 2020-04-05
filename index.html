@@ -1,79 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Chrome Bluetooth App</title>
 
     <!-- <link href="deps/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">   -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="css/index.css" rel="stylesheet">
-  </head>
-  <body>
+</head>
+
+<body>
 
     <div class="container" id="app-content">
-      <h1>Chrome Bluetooth App</h1>
+        <h1>Chrome Bluetooth App</h1>
 
-      <div>
-        <div class="form-group">
-          <label for="btDeviceSelect">BT Devices:</label>
-          <select class="form-control" id="btDeviceSelect"></select>
-        </div>
+        <div>
+            <div class="form-group">
+                <label for="btDeviceSelect">BT Devices:</label>
+                <select class="form-control" id="btDeviceSelect"></select>
+            </div>
 
-<!--        <div class="form-group">
+            <!--        <div class="form-group">
           <button type="button" class="btn" id="btDeviceScan">Scan Devices</button>
         </div>  -->
 
-        <div class="form-group hidden">
-          <label>Selected BT Device:</label>
-          <p><span id="selectedBTDevice">&nbsp;</span></p>
-        </div>
+            <div class="form-group hidden">
+                <label>Selected BT Device:</label>
+                <p><span id="selectedBTDevice">&nbsp;</span></p>
+            </div>
 
-        <div class="row form-group">
-          <div class="col-md-6">
-            <label>Connection Status:</label>
-            <div><span id="btStatus">Disconnected</span></div>
-          </div>
+            <div class="row form-group">
+                <div class="col-md-6">
+                    <label>Connection Status:</label>
+                    <div><span id="btStatus">Disconnected</span></div>
+                </div>
 
-          <div class="col-md-6">
-            <label>Socket Id:</label>
-            <div><span id="socketId">-</span></div>
-          </div>
-        </div>
+                <div class="col-md-6">
+                    <label>Socket Id:</label>
+                    <div><span id="socketId">-</span></div>
+                </div>
+            </div>
 
-        <div class="form-group">
-          <label>Actions:</label>
-          <div>
-            <button type="button" class="btn" id="btConnect">Connect</button>
-            <button type="button" class="btn" id="btDisconnect">Disconnect</button>
-            <button type="button" class="btn" id="btGetDevice">Device Info</button>
-          </div>
-        </div>
+            <div class="form-group">
+                <label>Actions:</label>
+                <div>
+                    <button type="button" class="btn" id="btConnect">Connect</button>
+                    <button type="button" class="btn" id="btDisconnect">Disconnect</button>
+                    <button type="button" class="btn" id="btGetDevice">Device Info</button>
+                </div>
+            </div>
 
-        <div class="form-group">
-          <label for="sendMessageContent">Send Message:</label>
-          <div class="input-group">
-            <input type="text" class="form-control" id="sendMessageContent">
-            <span class="input-group-btn">
-              <button class="btn" type="button" id="btSendMessage">Send</button>
-            </span>
-          </div>
-        </div>
+            <div class="form-group">
+                <label for="sendMessageContent">Send Message:</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="sendMessageContent">
+                    <span class="input-group-btn">
+                        <button class="btn" type="button" id="btSendMessage">Send</button>
+                    </span>
+                </div>
+            </div>
 
-        <div class="form-group">
-          <label>Communication Log:</label>
-          <div class="well well-sm" id="btLog">
-            <pre class="log-content" id="btLogContent"></pre>
-          </div>
+            <div class="form-group">
+                <label>Communication Log:</label>
+                <div class="well well-sm" id="btLog">
+                    <pre class="log-content" id="btLogContent"></pre>
+                </div>
+            </div>
         </div>
-      </div>
 
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
     <!-- <script src="deps/jquery/dist/jquery.min.js"></script> -->
     <!-- <script src="deps/bootstrap/dist/js/bootstrap.min.js"></script> -->
     <script src="js/index.js"></script>
-  </body>
+</body>
 
 
 </html>
